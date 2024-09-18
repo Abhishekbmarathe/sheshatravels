@@ -92,3 +92,34 @@ menu.addEventListener("click", () => {
     }
 });
 
+const dynamicContainer = document.getElementById("dynamicContainer");
+
+// Function to generate a dynamic card with an image
+function addVehicleCard(imgSrc, imgAlt) {
+    const vehicleCard = document.createElement("div");
+    vehicleCard.classList.add("card", "card1");
+
+    const imageElement = document.createElement("img");
+    imageElement.src = imgSrc;
+    imageElement.alt = imgAlt;
+
+    vehicleCard.appendChild(imageElement);
+    dynamicContainer.appendChild(vehicleCard);
+}
+
+// Array of vehicle image information
+const vehicleData = [
+    { imgSrc: "resources/vehicles/WhatsApp Image 2024-09-18 at 8.17.30 PM.jpeg", imgAlt: "Car" },
+    { imgSrc: "resources/vehicles/WhatsApp Image 2024-09-18 at 8.17.31 PM.jpeg", imgAlt: "SUV" },
+    { imgSrc: "resources/vehicles/WhatsApp Image 2024-09-18 at 8.17.38 PM (1).jpeg", imgAlt: "Van" },
+    { imgSrc: "resources/vehicles/WhatsApp Image 2024-09-18 at 8.17.38 PM.jpeg", imgAlt: "Van" },
+    { imgSrc: "resources/vehicles/WhatsApp Image 2024-09-18 at 8.17.38 PM.jpeg", imgAlt: "Van" },
+    { imgSrc: "resources/vehicles/WhatsApp Image 2024-09-18 at 8.17.29 PM.jpeg", imgAlt: "Van" },
+    { imgSrc: "resources/vehicles/WhatsApp Image 2024-09-18 at 8.17.37 PM.jpeg", imgAlt: "Van" },
+    { imgSrc: "resources/vehicles/WhatsApp Image 2024-09-18 at 8.16.21 PM.jpeg", imgAlt: "Van" }
+];
+
+// Dynamically create vehicle cards
+vehicleData.forEach(vehicle => {
+    addVehicleCard(vehicle.imgSrc, vehicle.imgAlt);
+});

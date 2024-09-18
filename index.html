@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Vehicle Renting</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar with Logo -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#home">
+                <img src="logo.png" alt="Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#vehicles">Our vehicles</a></li>
+            <li><a href="#contact">Contact us</a></li>
+            <li><a href="#places">places</a></li>
+        </ul>
+        <button class="menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 12h18M3 6h18M3 18h18" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </button>
+    </nav>
+
+    <!-- Carousel -->
+    <div class="carousel-container" id="home">
+        <div class="carousel">
+            <img src="resources/vehicles/WhatsApp Image 2024-09-18 at 8.16.25 PM.jpeg" alt="Vehicle 1" class="carousel-img">
+            <img src="resources/vehicles/WhatsApp Image 2024-09-18 at 8.17.34 PM.jpeg" alt="Vehicle 2" class="carousel-img">
+            <img src="resources/vehicles/WhatsApp Image 2024-09-18 at 8.17.38 PM (1).jpeg" alt="Vehicle 3" class="carousel-img">
+        </div>
+        <div class="book">
+            <h1>Shesha Tours And Travels</h1>
+            <p>Travel with us and make your trip joyfull...</p>
+            <button>
+                <a href="#contact">
+                    contact now
+                </a>
+            </button>
+        </div>
+    </div>
+
+    <section class="about-us" id="about">
+        <h1>About <span class="text-color">us</span></h1>
+        <div class="about flex">
+            <div class="info">
+                <p>
+                    Welcome to <i><strong class="text-color">Shesha</strong></i> Tours and Travels! We are passionate
+                    about helping you explore beautiful
+                    destinations and create unforgettable memories. With years of experience in the travel industry, we
+                    take pride in offering exciting trips and adventures to suit every traveler. Our happy customers
+                    love the personalized service we provide, and our team of professional, friendly drivers ensures
+                    that your journey is always safe and comfortable. Whether you're planning a city tour, mountain
+                    adventure, or beach getaway, we’re here to make your trip easy, fun, and memorable. Let Shesha Tours
+                    and Travels take you on an amazing journey—you’ll treasure the experience for years to come!
+                </p>
+            </div>
+            <div>
+                <img src="logo.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Sections -->
+    <section class="info-section" id="vehicles">
+        <h2>Our <span class="text-color">Vehicles</span></h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="car1.jpg" alt="Car">
+            </div>
+            <div class="card">
+                <img src="suv.jpg" alt="SUV">
+                <h3>SUVs</h3>
+                <p>Rent spacious SUVs for long trips.</p>
+            </div>
+            <div class="card">
+                <img src="van.jpg" alt="Van">
+                <h3>Vans</h3>
+                <p>Ideal for group tours and family trips.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section" id="places">
+        <h2>Tourist <span class="text-color">Places</span></h2>
+        <div class="card-container tourist" id="touristCards">
+            <!-- Cards will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <section class="info-section" id="contact">
+        <h2>Contact <span class="text-color">for booking </span></h2>
+        <a href="tel:+918660925716">
+            <div class="flex">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.74 19.74 0 0 1-8.63-3.15A19.5 19.5 0 0 1 3.92 10.2 19.74 19.74 0 0 1 .75 1.81 2 2 0 0 1 2.78.25h3a2 2 0 0 1 2 1.72c.18 1.25.49 2.47.93 3.63a2 2 0 0 1-.45 2.11l-1.27 1.27a16 16 0 0 0 6.41 6.41l1.27-1.27a2 2 0 0 1 2.11-.45c1.16.44 2.38.75 3.63.93a2 2 0 0 1 1.72 2z">
+                        </path>
+                    </svg>
+
+                </div>
+                <div>
+                    <h1>
+                        +91 86609 25716
+                    </h1>
+                </div>
+
+            </div>
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="">
+        <label for="">Shesha travels</label>
+        <p>Phone: +91 86609 25716</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
